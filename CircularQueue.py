@@ -19,7 +19,7 @@ class CircularQueue :
 
         def dequeue(self) :
             if not self.isEmpty():                          #공백이 아닌 경우 삭제 가능
-                self.front = (self.front+1)%capacity        #front를 시계방향으로 회전
+                self.front = (self.front+1)%self.capacity        #front를 시계방향으로 회전
                 return self.array[self.front]               #삭제할 요소를 반환!
             
         def peek(self):
